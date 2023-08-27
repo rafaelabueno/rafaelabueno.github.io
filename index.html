@@ -1,30 +1,304 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rafaela Bueno de Oliveira</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rafaela Bueno de Oliveira</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="https://gifs.eco.br/wp-content/uploads/2023/07/imagens-da-fisica-png-2.png" type="image/png">
+<link rel="shortcut icon" href="https://gifs.eco.br/wp-content/uploads/2023/07/imagens-da-fisica-png-2.png" type="image/png">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px; padding-top: 40px; padding-left: 20px;}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.w3-hover-text-custom {
+  color: #b873f1; /* Cor desejada */
+  transition-duration: 0.5s;
+}
+.w3-hover-text-custom:hover {
+  color: #efff9f; /* Cor alterada ao passar o mouse */
+  transition-duration: 0.5s;
+}
+
+.skill-name {transition-duration: 0.5s;}
+
+.skill-name:hover {
+  color: #d885ed; /* Cor desejada */
+  transition-duration: 0.5s;
+}
+
+/* Estilo para as entradas de educação */
+.education-entry {
+  margin-bottom: 30px;
+  border-left: 6px solid #d885ed; /* Cor da borda à esquerda */
+  padding-left: 16px;
+}
+
+/* Estilo para os títulos das entradas de educação */
+.education-entry h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.education-entry h3.institute-name {
+  color: #ccc; /* Altere para a cor desejada */
+  transition-duration: 0.5s;
+}
+.education-entry h3.institute-name:hover {
+    color: #d885ed; /* Cor desejada */
+  transition-duration: 0.5s;
+}
+/* Estilo para os anos das entradas de educação */
+.education-entry .w3-opacity {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+/* Estilo para os detalhes das entradas de educação */
+.education-entry p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.w3-image {
+
+    transition-duration: 0.5s;
+}
+/* Efeito de hover para as imagens */
+.w3-photo-opacity:hover {
+  opacity: 0.6; /* Altere o valor para a transparência desejada */
+
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 42, 154);
+}
+</style>
+
+<script>
+    function submitForm() {
+      // Simulando envio do formulário (substitua por sua lógica de envio real)
+      // Aqui, estamos apenas exibindo a mensagem de sucesso.
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      // Exibir a mensagem de sucesso
+      var successMessage = document.getElementById("success-message");
+      successMessage.style.display = "block";
+  
+      // Impedir o envio real do formulário
+      return false;
+    }
+  
+    document.addEventListener("DOMContentLoaded", function() {
+      var submitButton = document.getElementById("submit-button");
+      submitButton.addEventListener("click", function() {
+        submitForm();
+      });
+    });
+  </script>
+     
+</head>
+<body class="w3-black">
+
+    
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="foto.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo w3-hover-text-custom"><span class="w3-hide-small">I'm</span> Rafaela Bueno</h1>
+    <p>Physics student at the Institute of Physics of the University of Sao Paulo</p>
+    <img src="https://www.wondriumdaily.com/wp-content/uploads/2022/11/Probability-In-Quantum-Mechanics_QBS_Featured.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Rafaela Bueno de Oliveira</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hello nice to meet you. I'm Rafaela, a fourth-year Physics student at the Physics 
+        Institute of the University of Sao Paulo (IF-USP). Currently, I divide my time between
+         my hobbies of learning science and technology at the same time and trying to cross these 
+         two faces through a unique interface. Listen to one of my favorite songs!
+    </p>
+
+    <iframe src="https://open.spotify.com/embed/track/4xAmbn7xiy6wGOs4oaxv70" width="100%" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+    
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+        <h2 class="w3-text-light-grey">My Skills</h2>
+        <hr style="width: 200px" class="w3-opacity">
+
+    <p class="w3-wide skill-name">Python</p>
+    <div class="w3-white skill-bar">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    
+    <p class="w3-wide skill-name">Data analysis</p>
+    <div class="w3-white skill-bar">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    
+    <p class="w3-wide skill-name">Problem solving</p>
+    <div class="w3-white skill-bar">
+      <div class="w3-dark-grey" style="height:28px;width:82%"></div>
+    </div>
+    
+    <p class="w3-wide skill-name">English</p>
+    <div class="w3-white skill-bar">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+
+
+    
+    <br>
+
+
+   <!-- Education Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="education">
+    <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width: 200px" class="w3-opacity">
+    
+    <div class="education-entry">
+        <h3 class="institute-name"><b>Institute of Physics of the University of Sao Paulo</b></h3>
+      <p class="w3-opacity">2020 - 2024</p>
+      <p>Participated in research during graduation involving collaborative networks between researchers teaching electromagnetism through graph theory.</p>
+    </div>
+    
+    <div class="education-entry">
+        <h3 class="institute-name"><b>College ENIAC</b></h3>
+      <p class="w3-opacity">2016 - 2018</p>
+      <p>Graduated as a Computer Technician, acquired knowledge about programming logic, computer networks, HTML, CSS, JavaScript, SQL, C, and hardware.</p>
+    </div>
+  </div>
+
+        
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+
+
+   <br>
+
+    
+    
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+ 
+  <div class="w3-content w3-text-grey w3-padding-64" id="photos">
+    <h2 class="w3-text-light-grey">Photos about Physics</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://static.scientificamerican.com/blogs/cache/file/FE946D19-DD8A-4F50-968B5E142460AFCE_source.jpg?w=590&h=800&F34CBDA2-EC01-40A3-93FC20A458CC0C05" style="width:100%" class="w3-image w3-photo-opacity">
+        <img src="https://www.austincc.edu/sites/default/files/sem-physics.jpg" style="width:100%" class="w3-image w3-photo-opacity">
+        <img src="https://res.cloudinary.com/christian-brothers-university/images/w_600,c_scale,dpr_2.0,f_auto/v1684516237/cbu-website-assets/physics-3871216_1280/physics-3871216_1280.jpg?_i=AA" style="width:100%" class="w3-image w3-photo-opacity">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://www.tutorialspoint.com/physics_part2/images/astrophysics.jpg" style="width:100%" class="w3-image w3-photo-opacity">
+        <img src="https://www.secretsofuniverse.in/wp-content/uploads/2020/03/What-is-Astrophysics-1024x683.jpg" style="width:100%" class="w3-image w3-photo-opacity">
+        <img src="https://asd.gsfc.nasa.gov/blueshift/wp-content/uploads/2015/11/Spacetime_curvature.png" style="width:100%" class="w3-image w3-photo-opacity">
+       
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sao Paulo, BR</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +55 11988254000</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: rafaelaxbueno@usp.br</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form id="contact-form" action="https://formspree.io/f/xyyqwobk" method="POST">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button id="submit-button" class="w3-button w3-light-grey w3-padding-large" type="button">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+    <div id="success-message" class="w3-text-green" style="display: none;">
+        
+    Message sent successfully!
+    </div>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://rafaelabueno.github.io/" target="_blank" class="w3-hover-text-green">Rafaela Bueno de Oliveira</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 
 
-<div class="bg-danger p-4 text-white"><h2>Rafaela Bueno de Oliveira</h2></div>
-<div class="bg-danger p-2" style="--bs-bg-opacity: .2;">  ♥ Physics student at the Institute of Physics of the University of Sao Paulo</div>
-
-<div class="border border-secondary p-2 mb-2"><b>Education</b> <br> • Institute of Physics - University of Sao Paulo (2020 - 2024)<br> Physics
-<br> • College ENIAC (2016-2018) <br> Computer Technician </div>
-
-<div class="border border-secondary p-2 mb-2"><b>Work Experience</b> <br> • Catavento Museum (mar - jul | 2022) <br> Intern </div>
-
-<div class="border border-secondary p-2 mb-2"><b>Languages</b> <br> • Portuguese <br> native <br> • English <br> intermediary </div>
-
-<div class="border border-secondary p-2 mb-2"><b>Hard Skills</b> <br> • Python <br>  • HTML <br>  • CSS  <br>  • JavaScript  </div>
-
-<div class="border border-secondary p-2 mb-2"><b>Soft Skills</b> <br> • Problem-solving <br> • Adaptability <br> • Communication <br> • Patience  </div>
-
-  </body>
+</body>
 </html>
